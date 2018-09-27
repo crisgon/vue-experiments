@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css" />
+  <title>Modal</title>
+  <style>
+    body {
+      padding: 2em;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="title">Modal with Vue JS and Bulma</h1>
+  <div id="root" class="container">
+    <modal v-if="showModal" @close="showModal = false">
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit corporis, optio quasi accusamus modi ipsa officia maxime amet deleniti blanditiis asperiores voluptate ratione. Culpa maxime harum fuga deserunt ipsam nihil.
+      </p>
+    </modal>
+    <a class="button is-primary" @click="showModal = true">Show Modal</a>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
